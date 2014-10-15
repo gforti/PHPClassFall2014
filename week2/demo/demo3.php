@@ -19,14 +19,21 @@
         
         $errorMsg = '';
         
-        if ( empty($_POST['fname']) === false ) {
-            echo $_POST['fname'];
-        }
+        if ( !empty($_POST) ) {
         
-        if ( isset($_POST['lname']) === true ) {
-            echo $_POST['lname'];
+            if ( empty($_POST['fname']) === false ) {
+                echo $_POST['fname'];
+            } else {
+                $errorMsg = 'First name is empty';
+            }
+
+            if ( isset($_POST['lname']) === true ) {
+                echo $_POST['lname'];
+            } else {
+                $errorMsg = 'Last name is empty';
+            }
+            
         }
-        
         /*
         empty
         isset();
@@ -37,6 +44,7 @@
          if ( empty($errorMsg) === false ) {
              echo '<p>', $errorMsg , '</p>';
          }
+        
              
              
         ?>

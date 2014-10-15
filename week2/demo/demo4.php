@@ -7,12 +7,21 @@
     <body>
         
         <?php        
-            $fname = '';
-            $lname = '';
+            $fname = 'fgdfgdf';
+            $lname = 'dfgdfgdfg';
+            $errorMsg = '';
             if ( !empty($_POST) ) {
                $fname = $_POST['fname'];
                $lname = $_POST['lname']; 
-            }        
+            }
+            
+            include './validation.php';
+                        
+            
+            if ( empty($errorMsg) === false ) {
+             echo '<p>', $errorMsg , '</p>';
+            // exit();
+         }
         ?>
         <h1> My Form </h1>
         <form action="#" method="post">            

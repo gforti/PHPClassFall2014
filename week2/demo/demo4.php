@@ -6,18 +6,27 @@
     </head>
     <body>
         
-        <?php        
-            $fname = 'fgdfgdf';
-            $lname = 'dfgdfgdfg';
+        <?php     
+        
+            /*
+             * it's a good idea to set a default value for a variable you plan to
+             * use.  If you try to use a variable in PHP that does not exist, you 
+             * will get an error message.
+             */
+            $fname = '';
+            $lname = '';
             $errorMsg = '';
             if ( !empty($_POST) ) {
                $fname = $_POST['fname'];
                $lname = $_POST['lname']; 
             }
-            
+            /*
+             * the include function will insert a block on code into this part
+             * of the page.
+             */
             include './validation.php';
                         
-            
+             
             if ( empty($errorMsg) === false ) {
              echo '<p>', $errorMsg , '</p>';
             // exit();
@@ -30,8 +39,5 @@
             <input type="submit" />            
         </form>
         
-        <?php
-        // put your code here
-        ?>
     </body>
 </html>

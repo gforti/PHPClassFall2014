@@ -19,6 +19,11 @@
         
         $errorMsg = '';
         
+        /*
+         * $_POST is a super global when forms are submmited via the post method
+         * you can check to see if the post is empty or not before executing logic.
+         */
+        
         if ( !empty($_POST) ) {
         
             if ( empty($_POST['fname']) === false ) {
@@ -35,6 +40,8 @@
             
         }
         /*
+         * use php.net to search what these built-in functions in PHP do.
+         * PHP has hundreds of useful functions you can use.
         empty
         isset();
         is_string($var)

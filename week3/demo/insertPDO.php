@@ -13,6 +13,10 @@
          
             if ( !empty($_POST) ) {
                 
+                /*
+                 * Best to create the query in a string and confirm 
+                 * its how it should be.
+                 */
                 $sql = "insert into users set fullname='"
                         . $_POST['fullname'] . 
                         "', email = 'test@test.com', phone = '4014443333', zip = '12345';";
@@ -20,6 +24,10 @@
                 
                 echo $sql ;
                 
+                /*
+                 * run the statement.  
+                 * If it fails the function will return false
+                 */
                 if ( $pdo->exec($sql) ) {
                     echo 'Saved Data';                    
                 } else {

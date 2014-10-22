@@ -10,6 +10,11 @@
             if ( !empty($_POST) ) {
                 echo $_POST['fullname'];
             }
+            
+            
+            $pdo = new PDO("mysql:host=localhost;dbname=phpclassfall2014", "root", "");
+            
+            var_dump($pdo);
         ?>
         
         <form action="#" method="post">            

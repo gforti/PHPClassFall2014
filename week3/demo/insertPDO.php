@@ -29,7 +29,10 @@
                 
                 /*
                  * run the statement.  
-                 * If it fails the function will return false
+                 * exec() returns the number of rows affected 
+                 * returns the number of rows that were modified or 
+                 * deleted by the SQL statement you issued. 
+                 * If no rows were affected returns 0.
                  */
                 if ( $pdo->exec($sql) ) {
                     echo 'Saved Data';                    

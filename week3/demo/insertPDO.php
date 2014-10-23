@@ -16,6 +16,9 @@
                 /*
                  * Best to create the query in a string and confirm 
                  * its how it should be.
+                 * 
+                 * Notice that there is no id.  Since we are using auto increment
+                 * for the id MySQL will automatically add an id for you.
                  */
                 $sql = "insert into users set fullname='"
                         . $_POST['fullname'] . 

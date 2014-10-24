@@ -28,7 +28,7 @@
                      echo '<td>', $value['phone'] ,'</td>';
                      echo '<td>', $value['zip'] ,'</td>';          
                      echo '<td><a href="">Update</a></td>';          
-                     echo '<td><a href="">Delete</a></td>';          
+                     echo '<td><a href="deleteuser.php?id=',$value['id'],'">Delete</a></td>';          
                     echo '</tr>';
                 }
                 echo '</table>';

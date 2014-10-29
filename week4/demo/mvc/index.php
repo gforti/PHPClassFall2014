@@ -13,11 +13,13 @@ if ( !empty($_POST) && isset($_POST['action']) ) {
 }
 
 if ( $action === 'view_products' ) {
-    
+     echo 'view_products';
 } else if ( $action === 'add_products' ) {
+     echo 'add_products';
     
 } else {
     // home
+    echo 'home';
 }
 
 

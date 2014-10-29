@@ -4,6 +4,11 @@
  * view.  Your view will assume that a variable will be set with
  * the correct data and your controller (this page) will take the data
  * from the model and set it for the view.
+ * 
+ * The Rule to MVC, always keep your controllers light.
+ * Your view should just display data
+ * Your models should get all your data and handle all your logic
+ * 
  */
 include 'models/database.php';
 include 'models/users.php';

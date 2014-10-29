@@ -1,5 +1,10 @@
 <?php
-
+/*
+ * The controler will be able to get your data and link it to your
+ * view.  Your view will assume that a variable will be set with
+ * the correct data and your controller (this page) will take the data
+ * from the model and set it for the view.
+ */
 include 'models/database.php';
 include 'models/users.php';
 

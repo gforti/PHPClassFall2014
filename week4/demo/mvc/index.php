@@ -1,5 +1,6 @@
 <?php
 
+include 'views/header.php';
 
 $action = 'home';
 
@@ -20,3 +21,4 @@ if ( $action === 'view_products' ) {
 }
 
 
+include 'views/footer.php';

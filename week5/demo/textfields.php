@@ -24,7 +24,8 @@ and open the template in the editor.
 <input type="password" name="passwordfield" value="" /><br />
 
 <input type="hidden" name="hiddenfield" value="" /><br />
-            
+           
+<input type="submit" value="submit" />
             
             
         </form>

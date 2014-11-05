@@ -21,7 +21,11 @@ and open the template in the editor.
         
           <form action="#" method="post">
             
-1. ford <input type="radio" name="cars" value="ford" /> <br />
+1. ford <input type="radio" name="cars" value="ford"
+               <?php
+               
+               ?>
+               /> <br />
 2. chevy <input type="radio" name="cars" value="chevy" checked="checked" /> <br />
 3. honda <input type="radio" name="cars" value="honda" /> <br />
 

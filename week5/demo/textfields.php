@@ -12,18 +12,29 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
+        
+        $textfield = '';
+        $passwordfield = '';
+        $hiddenfield = 'hey im here';
+        
+            if ( !empty($_POST) ) {
+                $textfield = $_POST['textfield'];
+                $passwordfield = $_POST['passwordfield'];
+                $hiddenfield = $_POST['hiddenfield'];
+            }
+        
         ?>
        
         <form action="#" method="post">
             
             
 <label>Text</label>
-<input type="text" name="textfield" value="" /><br />
+<input type="text" name="textfield" value="<?php echo $textfield; ?>" /><br />
     
 <label>Text</label>
-<input type="password" name="passwordfield" value="" /><br />
+<input type="password" name="passwordfield" value="<?php echo $passwordfield; ?>" /><br />
 
-<input type="hidden" name="hiddenfield" value="" /><br />
+<input type="hidden" name="hiddenfield" value="<?php echo $hiddenfield; ?>" /><br />
            
 <input type="submit" value="submit" />
             

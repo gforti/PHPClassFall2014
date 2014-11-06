@@ -17,17 +17,33 @@ and open the template in the editor.
         
         $carSelected = filter_input(INPUT_POST, 'cars');
         
+        $checkedText = 'checked="checked"';       
         ?>
         
           <form action="#" method="post">
             
 1. ford <input type="radio" name="cars" value="ford"
                <?php
-               
+                if ( $carSelected === 'ford') {
+                    echo $checkedText;
+                }               
                ?>
                /> <br />
-2. chevy <input type="radio" name="cars" value="chevy" checked="checked" /> <br />
-3. honda <input type="radio" name="cars" value="honda" /> <br />
+2. chevy <input type="radio" name="cars" value="chevy" 
+                <?php
+                if ( $carSelected === 'chevy') {
+                    echo $checkedText;
+                }               
+               ?>
+                
+                /> <br />
+3. honda <input type="radio" name="cars" value="honda"
+                 <?php
+                if ( $carSelected === 'honda') {
+                    echo $checkedText;
+                }               
+               ?>
+                /> <br />
 
               
 <input type="submit" value="submit" />

@@ -23,7 +23,7 @@
         
           <form action="#" method="post">
             
-              <textarea name="comments"><?php echo $comments;?></textarea>
+<textarea name="comments"><?php echo $comments;?></textarea>
 
               
 <input type="submit" value="submit" />

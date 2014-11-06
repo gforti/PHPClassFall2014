@@ -14,13 +14,39 @@
          $mush = filter_input(INPUT_POST, 'mush');
          $olv = filter_input(INPUT_POST, 'olv');
         
+        echo isset($_POST['olv']);
+         
+         
         ?>
         
           <form action="#" method="post">
             
-1. ford <input type="checkbox" name="pep" /> <br />
-2. chevy <input type="checkbox" name="mush" checked="checked" /> <br />
-3. honda <input type="checkbox" name="olv" /> <br />
+1. pep <input type="checkbox" name="pep"
+    <?php
+         if ( $pep == 'on' )    {
+             echo 'checked="checked"';
+         } 
+              
+      ?>        /> <br />
+2. mush <input type="checkbox" name="mush" 
+               <?php
+         if ( $mush == 'on' )    {
+             echo 'checked="checked"';
+         } 
+              
+      ?>
+               
+               /> <br />
+3. olv <input type="checkbox" name="olv" 
+              
+               <?php
+         if ( $olv == 'on' )    {
+             echo 'checked="checked"';
+         } 
+              
+      ?>
+              
+              /> <br />
 
               
 <input type="submit" value="submit" />

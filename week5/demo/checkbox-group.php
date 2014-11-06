@@ -10,16 +10,45 @@
         
         print_r($_POST);
         
-         $tops = filter_input(INPUT_POST, 'tops');
+            
+         $postValues = filter_input_array(INPUT_POST);
+         $tops = array();
+         if (is_array($postValues) && array_key_exists('tops', $postValues ) ) {
+             $tops = $postValues['tops'];
+         }
          
+         print_r($tops);
         
         ?>
         
           <form action="#" method="post">
             
-1. ford <input type="checkbox" name="tops[]" value="pep" /> <br />
-2. chevy <input type="checkbox" name="tops[]" value="mush" checked="checked" /> <br />
-3. honda <input type="checkbox" name="tops[]" value="olv" /> <br />
+1. pep <input type="checkbox" name="tops[]" value="pep"
+               <?php
+               if ( is_array($tops) && in_array('pep', $tops ) ) {
+                    echo 'checked="checked"';
+                }
+               
+               ?>
+               
+               /> <br />
+2. mush <input type="checkbox" name="tops[]" value="mush" 
+               <?php
+               if ( is_array($tops) &&  in_array('mush', $tops ) ) {
+                    echo 'checked="checked"';
+                }
+               
+               ?>
+               /> <br />
+3. olv <input type="checkbox" name="tops[]" value="olv"
+               <?php
+               if ( is_array($tops) &&  in_array('olv', $tops ) ) {
+                    echo 'checked="checked"';
+                }
+               
+               ?>
+              
+              /> <br />
 
               
 <input type="submit" value="submit" />

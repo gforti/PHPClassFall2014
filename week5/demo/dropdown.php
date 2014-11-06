@@ -18,9 +18,30 @@
           <form action="#" method="post">
             
 <select name="card">
-    <option value="visa">Visa</option>
-    <option value="mastercard">MasterCard</option>
-    <option value="discover">Discover</option>
+    <option value="visa"
+            <?php
+                if ( $card === 'visa') {
+                    echo 'selected="selected"';
+                }
+            ?>
+            
+            >Visa</option>
+    <option value="mastercard"
+            <?php
+                if ( $card === 'mastercard') {
+                    echo 'selected="selected"';
+                }
+            ?>
+            
+            >MasterCard</option>
+    <option value="discover"
+            <?php
+                if ( $card === 'discover') {
+                    echo 'selected="selected"';
+                }
+            ?>
+            
+            >Discover</option>
 </select>
 
               

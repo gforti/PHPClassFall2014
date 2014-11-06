@@ -7,6 +7,11 @@
     <body>
         <?php
         // put your code here
+        /*
+         * works like the raido button.  instead of checked we use
+         * selected="selected"
+         */
+        
         
         print_r($_POST);
         

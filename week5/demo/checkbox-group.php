@@ -8,6 +8,16 @@
         <?php
         // put your code here
         
+        /*
+         * More advanced way of dealting with checkboxes in groups.
+         * 
+         * We set the name as an array so all the ones selected are passed
+         * as an array.  We then get the post array values and check for
+         * "tops".  We then use tops to check if the value is inside the
+         * array.
+         */
+        
+        
         print_r($_POST);
         
             

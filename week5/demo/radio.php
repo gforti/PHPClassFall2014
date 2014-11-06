@@ -13,6 +13,16 @@ and open the template in the editor.
         <?php
         // put your code here
         
+        /*
+         * With the radio button we have all the inputs with the same 
+         * name, so only one can be selected.
+         * 
+         * Once we have the value we want to output the html
+         * attribute checked="checked" into the input form
+         * for the radio buttons only if it was the one checked.
+         */
+        
+        
         print_r($_POST);
         
         $carSelected = filter_input(INPUT_POST, 'cars');

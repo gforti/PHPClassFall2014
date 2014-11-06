@@ -13,6 +13,11 @@ and open the template in the editor.
         <?php
         // put your code here
         
+        /*
+         * same as textfields.php except we use the filter_input
+         * function rather than $_POST
+         */
+        
         $textfield = filter_input(INPUT_POST, 'textfield');
         $passwordfield = filter_input(INPUT_POST, 'passwordfield');
         $hiddenfield = filter_input(INPUT_POST, 'hiddenfield');

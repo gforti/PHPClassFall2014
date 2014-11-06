@@ -8,6 +8,14 @@
         <?php
         // put your code here
         
+        /*
+         * For check boxes we do not need to put the value attribute in
+         * the input fields.  We only need to put the names. Once a 
+         * selection is made, it will pass the value "on".  We can check 
+         * each checkbox to see if it has been selected.
+         */
+        
+        
         print_r($_POST);
         
          $pep = filter_input(INPUT_POST, 'pep');

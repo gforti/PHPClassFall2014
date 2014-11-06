@@ -13,6 +13,16 @@ and open the template in the editor.
         <?php
         // put your code here
         
+        /*
+         * The idea here is to set our variables with a default
+         * value before we check the post.  In the case
+         * that we do not post a value we will not get an error
+         * 
+         * We echo out the values that are posted from the field 
+         * so the user has a chance to edit the values and not
+         * have to re-enter the values.
+         */
+        
         $textfield = '';
         $passwordfield = '';
         $hiddenfield = 'hey im here';

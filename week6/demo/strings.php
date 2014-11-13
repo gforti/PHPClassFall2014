@@ -57,9 +57,7 @@ echo strpos($email, '@');
 echo '<br />';
 echo str_shuffle($email);
 echo strrev($email);
-            
-            
-            
+
         
         
         ?>

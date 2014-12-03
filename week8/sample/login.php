@@ -6,8 +6,9 @@
     </head>
     <body>
         
-        <form action="#" name="mainform">        
-            Passcode: <input name="passcode" value="" />        
+        <form action="#" name="mainform" method="post">        
+            Passcode: <input type="password" name="passcode" value="" /> 
+            <input type="submit" value="Submit" />
         </form>
         
         

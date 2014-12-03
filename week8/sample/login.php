@@ -15,6 +15,21 @@
         <?php
         // put your code here
         
+         session_start();
+         
+         if ( !empty($_POST) ) {
+             
+             if ( $_POST['passcode'] === 'test' ) {
+                  $_SESSION['loggedin'] = true;
+                  header('Location: admin.php');
+             } else {
+                 $_SESSION['loggedin'] = false; 
+             }
+                         
+         }
+         
+         
+        
         
         
         

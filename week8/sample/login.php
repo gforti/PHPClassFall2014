@@ -17,15 +17,18 @@
         
          session_start();
          
+         if ( !isset($_SESSION['loggedin']) ) {
+             $_SESSION['loggedin'] = false;
+         }
+          
+         
+         
          if ( !empty($_POST) ) {
              
              if ( $_POST['passcode'] === 'test' ) {
                   $_SESSION['loggedin'] = true;
-                  header('Location: admin.php');
-             } else {
-                 $_SESSION['loggedin'] = false; 
-             }
-                         
+                 header('Location: admin.php');
+             }                          
          }
          
          

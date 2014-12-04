@@ -12,6 +12,12 @@
         
         <?php
         // put your code here
+        session_start();
+        
+        if ( !isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true ) {
+           header('Location: login.php'); 
+        }
+        
         
             if ( !empty($_GET) ) {
                 if ( $_GET['logout'] === 'true' ) {
